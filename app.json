@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "BanReady",
+    "slug": "BanReady",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "banready",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/images/icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#2070C0"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.lamun_666.BanReady"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#2070C0",
+          "imageWidth": 180
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "BanReady uses your location to check the winter parking rule where your car is parked."
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "76be07de-7b44-487c-932e-46b1b3df7b84"
+      }
+    }
+  }
+}
